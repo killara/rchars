@@ -1,0 +1,25 @@
+{
+  "name": "rchars",
+  "version": "0.0.1",
+  "description": "Get your random chars handily",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/killara/rchars.git"
+  },
+  "keywords": [
+    "random-chars",
+    "chars",
+    "generater",
+    "random"
+  ],
+  "author": "Runrioter <runrioter@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/killara/rchars/issues"
+  },
+  "homepage": "https://github.com/killara/rchars#readme"
+}
