@@ -4,7 +4,7 @@
 [![Travis branch](https://img.shields.io/travis/killara/rchars/master.svg)](https://travis-ci.org/killara/rchars)
 [![Codecov branch](https://img.shields.io/codecov/c/github/killara/rchars/master.svg)](https://codecov.io/github/killara/rchars?branch=master)
 
-Get your random chars handily
+:game_die: Get your random chars handily
 
 ## Usage
 
