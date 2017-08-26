@@ -13,8 +13,11 @@
 ```javascript
 const rchars = require('rchars');
 
-const randomString rchars.random10(20);
+const randomString = rchars.random10(20);
 console.log(randdomString); // 87256238656099047101
+
+const randomCustomString = rchars.randomFrom('_*.?', 20);
+console.log(randomCustomString); // *_.?*??_?_*?_*_*.*?.
 ```
 
 * API

@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const _chars = '0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const _chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 const random = (chars = _chars) => (radix = 62) => (len = 10) => {
 
