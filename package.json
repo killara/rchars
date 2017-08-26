@@ -4,7 +4,9 @@
   "description": "Get your random chars handily",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "eslint test index.js",
+    "test": "jest --forceExit",
+    "test-cov": "npm run test -- --coverage"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,18 @@
   "bugs": {
     "url": "https://github.com/killara/rchars/issues"
   },
-  "homepage": "https://github.com/killara/rchars#readme"
+  "homepage": "https://github.com/killara/rchars#readme",
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-egg": "^5.1.0",
+    "jest": "^20.0.4"
+  },
+  "jest": {
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ],
+    "bail": true,
+    "testEnvironment": "node"
+  }
 }
