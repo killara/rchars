@@ -18,6 +18,9 @@
     "generater",
     "random"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Runrioter <runrioter@qq.com>",
   "license": "MIT",
   "bugs": {
