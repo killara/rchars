@@ -2,5 +2,11 @@
   "extends": "eslint-config-egg",
   "parserOptions": {
     "ecmaVersion": 2017
+  },
+  "plugins": [
+    "jest"
+  ],
+  "env": {
+    "jest/globals": true
   }
 }

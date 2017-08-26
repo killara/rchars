@@ -4,13 +4,13 @@ const assert = require('assert');
 
 const _chars = '0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-const random = (chars = _chars) => (radix = 62) => (len = 10) => { 
+const random = (chars = _chars) => (radix = 62) => (len = 10) => {
 
-  assert(typeof chars === 'string' && chars.length > 0, 
+  assert(typeof chars === 'string' && chars.length > 0,
     'Chars set should be a string with a positive length');
-  assert(typeof radix === 'number' && radix >= 1 && radix <= chars.length, 
+  assert(typeof radix === 'number' && radix >= 1 && radix <= chars.length,
     'radix should be in range [1, chars.length]');
-  assert(typeof len === 'number' && len >= 0, 
+  assert(typeof len === 'number' && len >= 0,
     'the length of random chars should be a natural number');
 
   let temp = '';
