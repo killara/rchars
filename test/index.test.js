@@ -39,4 +39,16 @@ describe('Test rchars', () => {
     expect(rchars.randomFrom('_*.?', custom)).toMatch(new RegExp(regexp));
   });
 
+  test('randomSafeSync(count) to return a count length more truly and safer random chars for your session/url usage', () => {
+    const len = 50;
+    expect(rchars.randomSafeSync(len).length).toBe(50);
+  });
+
+  test('the return string of randomSafeSync(count) must not contain + / =', () => {
+    const len = 10000;
+    const randomStr = rchars.randomSafeSync(len);
+    expect(!~randomStr.indexOf('/')).toBeTruthy();
+    expect(!~randomStr.indexOf('+')).toBeTruthy();
+    expect(!~randomStr.indexOf('=')).toBeTruthy();
+  });
 });

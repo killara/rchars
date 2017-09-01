@@ -1,6 +1,7 @@
 'use strict';
 
 const assert = require('assert');
+const randomBytes = require('random-bytes');
 
 const _chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -21,7 +22,23 @@ const random = (chars = _chars) => (radix = 62) => (len = 10) => {
 
 };
 
+const purify = bytes => bytes.toString('base64')
+  .replace(/=+$/, '')
+  .replace(/\+/g, '')
+  .replace(/\//g, '');
+
+const randomSafeSync = count => {
+  let result = '';
+  let len = 0;
+  while ((len = count - result.length)) {
+    result += purify(randomBytes.sync(len)).substr(0, len);
+  }
+  return result;
+};
+
+
 exports.random10 = random()(10);
 exports.random36 = random()(36);
 exports.random62 = random()();
 exports.randomFrom = (chars = _chars, len = 10) => random(chars)(chars.length)(len);
+exports.randomSafeSync = randomSafeSync;

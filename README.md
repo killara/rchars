@@ -30,6 +30,8 @@ console.log(randomCustomString); // *_.?*??_?_*?_*_*.*?.
     * `#random62(length = 10)`
   * randomFrom to return a default/custom length with custom range chars
     * `#randomFrom(chars ,length = 10)`
+  * randomSafeSync(count) to return a custom length random chars for generating your session-id/url(don't contain /, +, = chars)
+    * `#randomSafeSync(count)`
 
 ## LICENSE
 

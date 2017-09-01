@@ -40,5 +40,8 @@
     ],
     "bail": true,
     "testEnvironment": "node"
+  },
+  "dependencies": {
+    "random-bytes": "^1.0.0"
   }
 }
